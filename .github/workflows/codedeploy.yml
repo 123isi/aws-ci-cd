@@ -13,7 +13,7 @@ env:
   AWS_REGION: ap-northeast-2
   S3_BUCKET: bssm-flask-artifacts-123isi
   APP_NAME: fastapi-cicd                     # ✅ CodeDeploy 애플리케이션 이름
-  DEPLOY_GROUP: fastapi-prod                 # ✅ CodeDeploy 배포 그룹 이름
+  DEPLOY_GROUP: fastapi-cicd                 # ✅ CodeDeploy 배포 그룹 이름
   PACKAGE: fastapiapp-${{ github.sha }}.zip  # ✅ zip 이름 변경
 
 jobs:
