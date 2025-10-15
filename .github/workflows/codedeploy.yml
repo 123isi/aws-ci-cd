@@ -36,7 +36,7 @@ jobs:
       - name: Make artifact
         run: |
           mkdir -p artifact/scripts
-          cp -r app requirements.txt appspec.yml artifact/
+          cp -r app requirement.txt appspec.yml artifact/
           cp -a scripts/. artifact/scripts/
           cd artifact && zip -r ../${{ env.PACKAGE }} . && cd ..
       
